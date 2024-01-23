@@ -1,3 +1,5 @@
+import 'package:bus/home.dart';
+
 import 'package:flutter/material.dart';
 
 class Way_typ extends StatefulWidget {
@@ -207,7 +209,9 @@ class _Way_typState extends State<Way_typ> {
                     SizedBox(height: 15,),
                     Container(
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>my_home()),);
+                        },
                         child: Text("GO"),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xFFFCD660),
