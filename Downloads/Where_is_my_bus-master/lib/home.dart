@@ -1,3 +1,4 @@
+import 'package:bus/maps.dart';
 import 'package:flutter/material.dart';
 
 class my_home extends StatefulWidget {
@@ -58,6 +59,7 @@ class _MyWidgetState extends State<my_home> {
   shadowColor: Color.fromARGB(255, 255, 255, 255),
   child: InkWell(
     onTap: () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>MapPage()),);
       // Handle tap event
     },
     highlightColor: const Color.fromARGB(0, 255, 255, 255),
@@ -97,6 +99,10 @@ class _MyWidgetState extends State<my_home> {
     ),
   ),
 ),
+
+
+
+
 SizedBox(height:5),
                 Material(
   elevation: 20,
