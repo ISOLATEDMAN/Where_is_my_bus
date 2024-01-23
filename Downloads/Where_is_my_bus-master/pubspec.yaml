@@ -71,6 +71,9 @@ flutter:
     - assets/way_typ.png
     - assets/way_2.png
     - assets/home.png
+    - assets/goog.jpg
+    - assets/ggg.jpg
+    - assets/g_1.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
