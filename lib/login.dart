@@ -12,6 +12,7 @@ class Log_ extends StatefulWidget {
 class _Log_State extends State<Log_> {
   TextEditingController _studentIdController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,9 +26,10 @@ class _Log_State extends State<Log_> {
         child: Center(
           child: Padding(
             padding: EdgeInsets.fromLTRB(30, 80, 30, 30),
+            child:SingleChildScrollView(
             child: Container(
               width: 400,
-              height: 400,
+              height: 500,
               decoration:const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.all(
@@ -79,6 +81,24 @@ Container(
   child: TextField(
     
     cursorWidth: 2,
+    controller: _emailController,
+    decoration: InputDecoration(
+      filled: true,
+      fillColor: Color.fromARGB(159, 210, 208, 208),
+      labelText: "EMAIL",
+      border: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(30),
+      ),
+    ),
+  ),
+),
+SizedBox(height: 30),
+Container(
+  width: 300,
+  height: 55,
+  child: TextField(
+    
+    cursorWidth: 2,
     controller: _passwordController,
     decoration: InputDecoration(
       filled: true,
@@ -90,7 +110,6 @@ Container(
     ),
   ),
 ),
-
 const SizedBox(height: 35),
 
 ElevatedButton( 
@@ -122,6 +141,6 @@ Container(
           ),
         ),
       ),
-    );
+    ),);
   }
 }
