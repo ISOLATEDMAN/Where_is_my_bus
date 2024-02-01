@@ -1,6 +1,6 @@
 # bus
 
-A new Flutter project.
+HEY THIS IS THE PROJECT STARTUP I AM CONTRIBUTING TOO
 
 ## Getting Started
 
